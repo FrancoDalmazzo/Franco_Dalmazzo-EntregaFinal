@@ -1,0 +1,35 @@
+.footer {
+    background-color: #0A090C;
+    color: rgb(121, 121, 121);
+    padding-top: 1.5rem;
+
+    .container-footer {
+        display: flex;
+        padding-inline: 200px;
+        justify-content: space-between;
+
+        @include tablet {
+            padding-inline: 10px;
+        }
+        @include mobile {
+            display:inline;
+        }
+    }
+    .listas-footer {
+        list-style-type: none;
+        text-align: center;
+        
+        > a{
+            font-size: 14px;
+         }
+    
+        .titulo-lista {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .nosotros-link {
+            text-decoration: none;
+            color: rgb(121, 121, 121);
+        }
+     }    
+}

@@ -1,0 +1,36 @@
+.seccion-nosotros {
+    display: flex;
+    height: 80vh;
+
+    @include tablet {
+        display: inline;
+    }
+
+    .container-nosotros {
+       width: 40%;
+       @include tablet {
+        display: inline;
+    }
+
+        >img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+    }
+    .container-nos-texto {
+        width: 60%;
+        padding: 4rem;
+        @include tablet {
+            display: inline;
+            text-align: center;
+        }
+        .titulo-nos {
+            margin-left: 5rem;
+            margin-bottom: 5rem;
+            margin-top: 4rem;
+            font-weight: 900;
+        }  
+    }
+}
+

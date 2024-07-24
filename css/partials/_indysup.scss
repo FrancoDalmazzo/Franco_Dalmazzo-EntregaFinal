@@ -8,6 +8,14 @@
 .mostrador{
     width: 100%;
     transition: .5s ease;
+
+    .btn-carrito {
+        border-radius: 5px;
+        color: $mainColor;
+        border:#707070 solid 1px;
+        font-weight: 600;
+
+    }
 }
 .mostrador .fila{
     width: 100%;
@@ -44,3 +52,23 @@
     font-weight: bold;
     font-size: 20px;
 } 
+
+
+.fila1 {
+    
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+// .fila2 {
+//     @include tablet {
+//         justify-content: center;
+//     }
+//     @include mobile {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//     }
+// }
